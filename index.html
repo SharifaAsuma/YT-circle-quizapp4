@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- スマホ対応 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IT部 ○×クイズ</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="quiz-container">
+
+        <h1>💻 IT部 ○×クイズ</h1>
+
+        <!-- クイズ画面 -->
+        <div id="quiz-screen">
+            <div class="status">
+                <span id="count">1 / 8</span>
+                <span class="timer">
+                    ⏱ <span id="timer">60</span>秒
+                </span>
+            </div>
+
+            <div class="question" id="question">
+            </div>
+
+            <div class="buttons">
+                <button class="true-btn" id="true-btn">
+                    〇
+                </button>
+
+                <button class="false-btn" id="false-btn">
+                    ×
+                </button>
+            </div>
+        </div>
+
+
+        <!-- 回答結果画面 -->
+        <div id="result-screen" class="result">
+
+            <div id="result-title" class="result-title">
+            </div>
+
+            <div class="explanation">
+                <strong>【解説】</strong>
+
+                <p id="explanation"></p>
+            </div>
+
+            <button class="next-btn" id="next-btn">
+                次の問題 →
+            </button>
+
+        </div>
+
+
+        <!-- 最終結果画面 -->
+        <div id="final-screen" class="result">
+
+            <h2>🎉 クイズ終了！</h2>
+
+            <div class="final-score" id="final-score">
+            </div>
+
+            <button class="restart-btn" id="restart-btn">
+                もう一度挑戦
+            </button>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="./quizApp.js"></script>
+
+</body>
+
+</html>
