@@ -4,13 +4,13 @@ import { questions } from "./questions.js";
 // 変数
 // =============================
 
-let current = 0;
+let current = 0;   //現在第n問かを格納する変数
 
-let score = 0;
+let score = 0;     //点数
 
-let timeLeft = 60;
+let timeLeft = 60; //1問を解く秒数
 
-let timer;
+let timer;         //タイマー
 
 
 // =============================
@@ -55,7 +55,7 @@ function startTimer() {
         .textContent = timeLeft;
 
 
-    timer = setInterval(function() {
+    timer = setInterval(function () {
 
         timeLeft--;
 
